@@ -1,5 +1,5 @@
 {
-  "name": "Site de Xavier Requillart",
+  "name": "SiteDeXavierRequillart",
   "version": "0.0.1",
   "description": "site personnel de Xavier Requillart",
   "main": "index.js",
@@ -11,8 +11,8 @@
   "author": "Xavier Requillart",
   "dependencies": {
     "next": "^5.0.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "styled-components": "^3.2.3"
   },
   "devDependencies": {
