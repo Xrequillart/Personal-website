@@ -16,7 +16,7 @@ export default class MyDocument extends Document {
         $(Head, null,
           this.props.styleTags,
         ),
-        $('body', null,
+        $('body', { style: { 'margin': 0 } },
           $(Main),
           $(NextScript),
         )

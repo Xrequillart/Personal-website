@@ -1,12 +1,15 @@
 import { css } from 'styled-components';
 
-const basic = ({ theme }) => `
-  color: #0099FF;
-  font-size: 26px;
+const basic = (props) => `
+  color: #FFFFFF;
+  font-size: 50px;
   font-weight: 600;
-  margin-left: 60px;
   padding: 0 30px;
-  border-left: 3px solid #493097;
+  text-transform: uppercase;
+  &:after{
+    content:'.fr';
+    color: #FF5959;
+  }
 `;
 
 const styles = () => css`${basic};`;

@@ -3,10 +3,15 @@ import { css } from 'styled-components';
 const basic = ({ theme }) => `
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  .container-body {
-    width: 100%;
-  }
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #000000;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  border-radius: 5px;
 `;
 
 const styles = () => css`${basic};`;

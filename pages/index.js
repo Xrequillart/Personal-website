@@ -1,25 +1,22 @@
 import { createElement as $ } from 'react';
-import styled from 'styled-components';
 import Head from 'next/head';
 import Link from 'next/link';
 
 import Title from '../components/title';
-import styles from './styles';
+import Container from '../components/container';
 
 const DefaultPage = (props) => {
-  const { className } = props;
+  const {} = props;
   return (
-    $('div', { className },
+    $('div', null,
       $(Head, null,
         $('title', null, 'index - Xavier Requillart'),
       ),
-      $('div', { className: 'container-body' },
-        $(Title, null, 'Welcome on Xavier Requillart'),
-        $('div', null, $(Link, { href:'/' }, 'index')),
-        $('div', null, $(Link, { href:'/about' }, 'about me')),
+      $(Container, null,
+        $(Title, null, 'XavierRequillart'),
       ),
     )
   )
 }
 
-export default styled(DefaultPage)`${styles}`;
+export default DefaultPage;
