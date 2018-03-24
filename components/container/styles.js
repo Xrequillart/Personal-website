@@ -6,7 +6,7 @@ const basic = ({ theme }) => `
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: #000000;
+  background: #FFF;
   padding: 0;
   margin: 0;
   width: 100%;

@@ -1,9 +1,9 @@
 import { css } from 'styled-components';
 
 const basic = (props) => `
-  color: #FFFFFF;
+  color: #000;
   font-size: 50px;
-  font-weight: 600;
+  font-weight: 800;
   padding: 0 30px;
   text-transform: uppercase;
   &:after{
