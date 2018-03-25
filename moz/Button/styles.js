@@ -2,8 +2,6 @@ import { css } from 'styled-components';
 
 import theme from '../theme';
 
-console.log(theme);
-
 export const kindStyle = {
   primary: (props) => `
     border: 2px solid ${theme.blue.light};
