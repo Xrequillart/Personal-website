@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 import Title from '../components/title';
+import Button from '../moz/Button';
 import Container from '../components/container';
 
 const DefaultPage = (props) => {
@@ -14,6 +15,8 @@ const DefaultPage = (props) => {
       ),
       $(Container, null,
         $(Title, null, 'XavierRequillart'),
+        $('div', null, $(Button, { kind: 'danger' }, 'test Xavier')),
+        $('div', null, $(Button, { kind: 'primary' }, 'test Xavier')),
       ),
     )
   )

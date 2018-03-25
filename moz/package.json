@@ -1,0 +1,19 @@
+{
+  "name": "overwork-mowsaique",
+  "version": "0.0.10",
+  "description": "kit component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository" :{ 
+    "type" : "git",
+    "url" : "https://github.com/OverworkTeam/mowsaique.git"
+  },
+  "author": "xrequillart",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.4.2",
+    "styled-components": "^2.2.3"
+  }
+}
