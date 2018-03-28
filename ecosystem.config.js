@@ -6,7 +6,7 @@ module.exports = {
       exec_mode: 'cluster',
       instances: 0,
       env: {
-        COMMON_VARIABLE: 'true',
+        NODE_ENV: 'production',
       },
       env_production: {
         NODE_ENV: 'production',
