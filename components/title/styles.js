@@ -1,15 +1,12 @@
 import { css } from 'styled-components';
 
+import theme from '../../theme';
+
 const basic = (props) => `
-  color: #000;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 800;
-  padding: 0 30px;
-  text-transform: uppercase;
-  &:after{
-    content:'.fr';
-    color: #FF5959;
-  }
+  color: ${theme.purple.dark};
+  margin-top: 0;
 `;
 
 const styles = () => css`${basic};`;

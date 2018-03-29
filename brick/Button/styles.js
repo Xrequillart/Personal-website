@@ -4,8 +4,18 @@ import theme from '../theme';
 
 export const kindStyle = {
   primary: (props) => `
-    border: 2px solid ${theme.blue.light};
-    background: ${theme.blue.light};
+    border: 2px solid ${theme.purple.dark};
+    background: ${theme.purple.dark};
+    color: ${theme.white};
+  `,
+  secondary: (props) => `
+    border: 2px solid ${theme.purple.light};
+    background: ${theme.purple.light};
+    color: ${theme.white};
+  `,
+  success: (props) => `
+    border: 2px solid ${theme.green.light};
+    background: ${theme.green.light};
     color: ${theme.white};
   `,
   danger: (props) => `
@@ -24,10 +34,6 @@ const basic = (props) => `
   border-radius: 5px;
   padding: 10px 30px;
   cursor: pointer;
-  transition: 0.2s;
-  &:hover {
-    transform: scale(0.99);
-  }
 `;
 
 const owStyle = props => props.kind && kindStyle[props.kind] && kindStyle[props.kind](props);
