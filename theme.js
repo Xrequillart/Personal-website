@@ -1,10 +1,10 @@
 import { injectGlobal } from 'styled-components';
 
 injectGlobal`
-  @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900');
+  @import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,600,700,800');
 
   body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
   }
 `;
