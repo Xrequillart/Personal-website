@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 import Title from '../../components/title';
-import Button from '../../../Brick/Button';
+import Button from '../../components/button';
 import Container from '../../components/container';
 import Triangle from '../../components/triangle';
 
