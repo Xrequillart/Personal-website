@@ -4,23 +4,13 @@ import theme from '../../theme';
 
 export const kindStyle = {
   primary: (props) => `
-    border: 2px solid ${theme.purple.dark};
-    background: ${theme.purple.dark};
-    color: ${theme.white};
-  `,
-  secondary: (props) => `
-    border: 2px solid ${theme.purple.light};
-    background: ${theme.purple.light};
+    border: 2px solid ${theme.blue.dark};
+    background: ${theme.blue.dark};
     color: ${theme.white};
   `,
   success: (props) => `
-    border: 2px solid ${theme.green.light};
-    background: ${theme.green.light};
-    color: ${theme.white};
-  `,
-  danger: (props) => `
-    border: 2px solid ${theme.red.light};
-    background: ${theme.red.light};
+    border: 2px solid ${theme.blue.light};
+    background: ${theme.blue.light};
     color: ${theme.white};
   `,
 };

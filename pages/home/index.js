@@ -3,10 +3,8 @@ import Head from 'next/head';
 import Link from 'next/link';
 import styled from 'styled-components';
 
-import Title from '../../components/title';
 import Button from '../../components/button';
 import Container from '../../components/container';
-import Triangle from '../../components/triangle';
 
 import styles from './styles';
 
@@ -20,24 +18,28 @@ const DefaultPage = (props) => {
   return (
     $('div', null,
       $(Head, null,
-        $('title', null, 'Xavier Réquillart Full stack developer sur Paris'),
+        $('title', null, 'Xavier Réquillart - Software engineer from Paris'),
         $('meta', { name: 'description', content: "Hello, je suis Xavier Réquillart. Full stack developer javascript. Jai utilise ReactJS et NextJS pour réaliser mon site personnel." }),
       ),
       $(Container, null,
-        $(Title, null,
-          'Hello,',
-          $('br'),
-          "i'm Xavier Réquillart",
-          $('br'),
-          'Full stack developer',
-        ),
         $('div', { className },
-          links.map((link) => $('a', { href: link.href, className: 'item' }, $(Button, { kind: link.kind }, link.name))),
+          $('div', { className: 'content-container' },
+            $('div', { className: 'details-container' },
+              $('h1', { className: 'title' },
+                $('p', { className: 'no-p big-hello' }, 'Hello, '),
+                $('p', { className: 'no-p' }, ' my name is Xavier Réquillart'),
+                $('p', { className: 'no-p' }, 'I\'m software engineer from Paris'),
+              ),
+              $('div', { className: 'buttons-container' },
+                links.map((link) => $('a', { href: link.href, className: 'item' }, $(Button, { kind: link.kind }, link.name))),
+              ),
+            )
+          ),
+          $('img', { src: './static/illustration.svg', className: 'illu' }),
         ),
-        $(Triangle),
       ),
     )
   )
 }
 
-export default styled(DefaultPage) `${styles}`;
+export default styled(DefaultPage)`${styles}`;

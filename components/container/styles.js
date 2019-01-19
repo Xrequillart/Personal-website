@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
 
 const basic = () => `
-  padding: 70px;
+  padding: 0 140px;
 `;
 
 const styles = () => css`${basic};`;

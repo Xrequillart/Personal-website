@@ -11,18 +11,11 @@ injectGlobal`
 
 export default {
   blue: {
-    light: '#0099FF',
+    light: '#4C93F4',
+    dark: '#223762',
   },
-  red: {
-    light: '#FF5959',
-  },
-  purple: {
-    light: '#7E63D2',
-    normal: '#493097',
-    dark: '#000A49',
-  },
-  green: {
-    light: '#50E3C2',
+  orange: {
+    light: '#FF9F5B',
   },
   white: '#FFFFFF',
   black: '#000000',
