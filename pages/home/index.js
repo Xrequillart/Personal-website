@@ -28,7 +28,7 @@ const DefaultPage = (props) => {
               $('h1', { className: 'title' },
                 $('p', { className: 'no-p big-hello' }, 'Hello, '),
                 $('p', { className: 'no-p' }, ' my name is Xavier Réquillart'),
-                $('p', { className: 'no-p' }, 'I\'m software engineer from Paris'),
+                $('p', { className: 'no-p' }, 'I\'m a software engineer from Paris'),
               ),
               $('div', { className: 'buttons-container' },
                 links.map((link) => $('a', { href: link.href, className: 'item' }, $(Button, { kind: link.kind }, link.name))),
